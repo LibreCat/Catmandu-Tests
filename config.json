@@ -1,0 +1,24 @@
+{
+ "packages":[
+ 	{ 
+ 		"name":"Catmandu-MARC",
+ 		"git":"git@github.com:LibreCat/Catmandu-MARC.git",
+ 		"branch":"master"
+ 	} ,
+ 	{ 
+ 		"name":"Catmandu-MAB2",
+ 		"git":"git@github.com:jorol/Catmandu-MAB2.git",
+ 		"branch":"master"
+ 	} ,
+ 	{ 
+ 		"name":"Catmandu-OAI",
+ 		"git":"git@github.com:LibreCat/Catmandu-OAI.git",
+ 		"branch":"master"
+ 	} ,
+ 	{ 
+ 		"name":"Catmandu-Store-MongoDB",
+ 		"git":"git@github.com:LibreCat/Catmandu-Store-MongoDB.git",
+ 		"branch":"master"
+ 	}
+ ]
+}
