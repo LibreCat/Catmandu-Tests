@@ -1,3 +1,10 @@
+# Catmandu-Tests
+
+Run test scripts of many Catmandu packages against the main (development)
+version of Catmandu
+
+# Installation
+
 Need a clean Perl installation without any installed modules except:
 
  * cpanm
@@ -5,13 +12,15 @@ Need a clean Perl installation without any installed modules except:
 
 E.g.
 
- $ plenv install --list
- $ plenv install <VERSION>
- $ plenv local <VERSION>
- $ plenv install-cpanm
- $ plenv rehash
- $ cpanm Carton
- $ carton
+    $ plenv install --list
+    $ plenv install <VERSION>
+    $ plenv local <VERSION>
+    $ plenv install-cpanm
+    $ plenv rehash
+    $ cpanm Carton
+    $ carton
+
+# Usage
 
 Clone the Catmandu packages 
 
