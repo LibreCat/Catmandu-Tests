@@ -18,7 +18,6 @@ E.g.
     $ plenv install-cpanm
     $ plenv rehash
     $ cpanm Carton
-    $ carton
 
 # Usage
 
