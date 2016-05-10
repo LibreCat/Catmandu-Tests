@@ -9,7 +9,7 @@ my $conf = config();
 
 my $cmd = shift;
 
-die "usage: $0 install|test" unless $cmd;
+die "usage: $0 install|test|clean|realclean" unless $cmd;
 
 if ($cmd eq 'install') {
 	cmd_install();
@@ -17,9 +17,14 @@ if ($cmd eq 'install') {
 elsif ($cmd eq 'test') {
 	cmd_test();
 }
+elsif ($cmd eq 'clean') {
+	cmd_clean();
+}
+elsif ($cmd eq 'realclean') {
+	cmd_realclean();
+}
 
 sub cmd_install {
-	system("./install_catmandu.sh $catmandu_git $catmandu_branch");
 	for my $pkg (@{$conf->{packages}}) {
 		my $name   = $pkg->{name};
 		my $git    = $pkg->{git};
@@ -32,6 +37,21 @@ sub cmd_test {
 	for my $pkg (@{$conf->{packages}}) {
 		my $name   = $pkg->{name};
 		system("./test_package.sh $name");
+	}
+}
+
+sub cmd_clean {
+	for my $pkg (@{$conf->{packages}}) {
+		my $name   = $pkg->{name};
+		system("rm -rf $name/cpanfile.snapshot");
+	}
+	system("rm -rf local");
+}
+
+sub cmd_realclean {
+	for my $pkg (@{$conf->{packages}}) {
+		my $name   = $pkg->{name};
+		system("rm -rf Catmandu*");
 	}
 }
 

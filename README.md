@@ -24,8 +24,8 @@ E.g.
 
 Clone the Catmandu packages 
 
- $ ./make.pl install
+    $ ./make.pl install
 
 Run the tests
 
- $ ./make.pl test
+    $ ./make.pl test
