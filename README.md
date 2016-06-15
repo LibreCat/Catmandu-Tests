@@ -1,7 +1,7 @@
 # Catmandu-Tests
 
 Run test scripts of many Catmandu packages against the main (development)
-version of Catmandu. User `Docker` or set up your own sandboxed perl environment as described in the section **Installation**.
+version of Catmandu. Use `Docker` or set up your own sandboxed perl environment as described in the section **Installation**.
 
 ## Run tests using Docker
 
