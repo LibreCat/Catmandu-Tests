@@ -2,9 +2,6 @@
 
 use JSON;
 
-my $catmandu_git = 'git@github.com:LibreCat/Catmandu.git';
-my $catmandu_branch = 'dev';
-
 my $conf = config();
 
 my $cmd = shift;

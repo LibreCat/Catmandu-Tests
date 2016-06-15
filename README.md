@@ -1,9 +1,17 @@
 # Catmandu-Tests
 
 Run test scripts of many Catmandu packages against the main (development)
-version of Catmandu
+version of Catmandu. User `Docker` or set up your own sandboxed perl environment as described in the section **Installation**.
 
-# Installation
+## Run tests using Docker
+
+Just run
+```
+$ docker build -t catmandu-tests .
+```
+If this image build is successful everything is fine.
+
+## Installation
 
 Need a clean Perl installation without any installed modules except:
 
@@ -19,9 +27,9 @@ E.g.
     $ plenv rehash
     $ cpanm Carton
 
-# Usage
+## Usage
 
-Clone the Catmandu packages 
+Clone the Catmandu packages
 
     $ ./make.pl install
 
